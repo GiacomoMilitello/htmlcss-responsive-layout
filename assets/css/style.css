@@ -1,4 +1,5 @@
 /* MOBILE FIRST */
+
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +9,35 @@
 html{
     font-family: sans-serif;
 }
+body{
+    margin-top: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* SVG */
 .white-svg{
     fill: white;
 }
+.blue-svg{
+    fill: #0084FD;
+}
+/* BUTTON */
 .white-button{
     background-color: white;
     color: black;
     padding: 5px 10px;
     border-radius: 15px;
+}
+.blue-button{
+    background-color: #0084FD;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
 }
 
 /* NAV */
@@ -23,25 +45,24 @@ nav{
     background-color: #0084fd;
     color: white;
     /* height: 50px; */
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
     z-index: 1;
     padding: 1% 5%;
 }
-nav svg:hover{
+/* nav svg:hover{
     display: none;
-}
+} */
 nav a,
 nav div{
     display: flex;
     align-items: center;
 }
 nav a{
-    text-decoration: none;
-    color: white;
     line-height: 100%;
 }
 nav img{
@@ -56,15 +77,14 @@ nav ul li{
     display: flex;
     /* align-items: center; */
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1365px) {
     nav ul{
         display: none;
     }
 }
 /* sistemare hover */
-nav svg:hover ul{
-    display: flex;
-} 
+/* nav svg:hover ul{
+    display: flex; */
 
 /*NAV TABLET VERSION */
 @media screen and (min-width: 768px) {
@@ -84,4 +104,51 @@ nav svg:hover ul{
     nav svg{
         display: none;
     }
+}
+
+/* GET A DEMO */
+#get-demo{
+    width: 100%;
+}
+#get-demo > :first-child{
+    padding: 6% 6% 0px 6% ;
+}
+.demo-card{
+    background-color: #B5DDFF;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 20px;
+    padding: 6%;
+}
+.demo-card svg:not(.white-svg) {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+}
+.demo-card h3{
+    color: #0084FD;
+    margin: 0 auto;
+}
+.demo-card p:not(:first-of-type){
+    text-align: center;
+}
+.demo-card > :not(:first-child) svg{
+    margin: 0 auto;
+}
+.demo-card > :first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+#get-demo .blue-button{
+    padding: 5px 40px;
+}
+.demo-card figure{
+    width: 80%;
+    margin: 20px auto;
+}
+.demo-card img{
+    width: 100%;
+    display: block;
 }
