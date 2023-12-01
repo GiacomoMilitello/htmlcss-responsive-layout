@@ -23,6 +23,9 @@ a{
 .blue-svg{
     fill: #0084FD;
 }
+.purple-svg{
+    fill: #37364E;
+}
 /* BUTTON */
 .white-button{
     background-color: white;
@@ -162,6 +165,7 @@ nav ul li{
         margin-top: 100px;
         margin-inline: auto;
         width: 90%;
+        padding-bottom: 10%;
     }
     .demo-card{
         flex: 1;
@@ -178,6 +182,9 @@ nav ul li{
 }
 /* GET A DEMO DESKTOP VERSION */
 @media screen and (min-width: 1366px) {
+    #get-demo{
+        width: 70%;
+    }
     #get-demo > :first-child{
         display: flex;
         justify-content: flex-start;
@@ -191,5 +198,80 @@ nav ul li{
     #get-demo > :first-child img{
         position: absolute;
         bottom: -364px;
+    }
+}
+
+/* STRATEGIC PLANNING */
+#strategic-planning{
+    width: 100%;
+    background-color: #9792E4;
+    padding-block: 40px;
+}
+.plan-card{
+    background-color: white;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 20px;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.plan-card p{
+    text-align: center;
+}
+#strategic-planning > :first-child{
+    color: white;
+    background-color: transparent;
+}
+#strategic-planning > :first-child p{
+    text-align: left;
+}
+.plan-card figure{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+.plan-card img{
+    width: 100%;
+    display: block;
+}
+.round-arrow{
+    margin: 0 auto;
+    background-color: #9792E4;
+    border-radius: 50%;
+    padding: 8px 8px 2px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* STRATEGIC PLANNING TABLET VERSION */
+@media screen and (min-width: 768px) {
+    #strategic-planning h3{
+        font-size: 250%;
+        align-self: flex-start;
+    }
+}
+
+/* STRATEGIC PLANNING DESKTOP VERSION */
+@media screen and (min-width: 1366px) {
+    #strategic-planning{
+        /* padding-block: 40px; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .plan-card{
+        width: 35%;
+        margin: 0;
+    }
+    #strategic-planning > :nth-child(2){
+        width: 25%;
+        padding: 1%;
+    }
+    #strategic-planning > :nth-child(2) figure{
+        width: 80%;
     }
 }
