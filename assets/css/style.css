@@ -146,9 +146,50 @@ nav ul li{
 }
 .demo-card figure{
     width: 80%;
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 20px;
 }
 .demo-card img{
     width: 100%;
     display: block;
+}
+/*GET A DEMO TABLET VERSION */
+@media screen and (min-width: 768px) {
+    #get-demo{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 100px;
+        margin-inline: auto;
+        width: 90%;
+    }
+    .demo-card{
+        flex: 1;
+        margin: 0;
+        flex-basis: calc((100% / 3) - 50px);
+    }
+    /* sistemare gap prima riga */
+    #get-demo > :first-child{
+        flex-basis: calc((200% / 3) - 50px);
+    }
+    /* #get-demo .blue-button {
+        max-width: 600px;
+    } sistemare!! */
+}
+/* GET A DEMO DESKTOP VERSION */
+@media screen and (min-width: 1366px) {
+    #get-demo > :first-child{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2% 2% 0px 2%;
+        gap: 10%;
+    }
+    #get-demo > :first-child figure{
+        position: relative;
+    }
+    #get-demo > :first-child img{
+        position: absolute;
+        bottom: -364px;
+    }
 }
