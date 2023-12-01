@@ -8,6 +8,7 @@
 }
 html{
     font-family: sans-serif;
+    line-height: 160%;
 }
 body{
     margin-top: 40px;
@@ -273,5 +274,82 @@ nav ul li{
     }
     #strategic-planning > :nth-child(2) figure{
         width: 80%;
+    }
+}
+
+/* TESTIMONIALS */
+#testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-block: 5%;
+}
+#testimonials h2{
+    color: #9792E4;
+    text-align: center;
+}
+#testimonials > p{
+    width: 90%;
+    text-align: center;
+}
+.testimonial-card{
+    background-color: #9792E4;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 20px;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.testimonial-card p{
+    text-align: center;
+}
+.testimonial-card h4{
+    text-align: center;
+    margin-top: 5%;
+}
+.testimonial-card figure{
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.testimonial-card div{
+    width: 60%;
+}
+.test-info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+}
+#nat{
+    background-image: url(../img/testimonial1.jpg);
+}
+#celia{
+    background-image: url(../img/testimonial2.jpg);
+}
+#bob{
+    background-image: url(../img/testimonial3.jpg);
+}
+/*TESTIMONIALS TABLET VERSION */
+@media screen and (min-width: 768px) {
+    .testimonial-card{
+        margin: 20px auto;
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .test-info p,
+    .test-info h4{
+        text-align: left;
+    }
+    .testimonial-card figure{
+        width: 30%;
     }
 }
