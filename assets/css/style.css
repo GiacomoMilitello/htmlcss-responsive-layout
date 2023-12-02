@@ -43,6 +43,13 @@ a{
     justify-content: center;
     gap: 5%;
 }
+.purple-button{
+    background-color: #9792E4;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 120px;
+}
 
 /* NAV */
 nav{
@@ -351,5 +358,72 @@ nav ul li{
     }
     .testimonial-card figure{
         width: 30%;
+    }
+}
+
+/* BENEFITS */
+#benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5%;
+    background-color: #9792E4;
+}
+#benefits h2{
+    color: white;
+    width: 80%;
+    text-align: center;
+    margin-block: 15px;
+}
+.benefits-card{
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.benefits-card h3{
+    color: #9792E4;
+    font-size: 300%;
+    margin-block: 20px;
+}
+.benefits-card h4{
+    color: #9792E4;
+    font-size: 120%;
+}
+
+/*BENEFITS TABLET VERSION */
+@media screen and (min-width: 768px) {
+    #benefits{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-inline: 2%;
+    }
+    #benefits h2{
+        width: 100%;
+    }
+    .benefits-card{
+        width: calc((100% / 2) - 10px);
+    }
+    #benefits h2{
+        font-size: 200%;
+    }
+}
+/* BENEFITS PLANNING DESKTOP VERSION */
+@media screen and (min-width: 1366px) {
+    #benefits{
+        padding-inline: 10%;
+    }
+    .benefits-card{
+        width: calc((100% / 3) - 10px);
+        padding-left: 4%;
+    }
+    #benefits h2{
+        font-size: 300%;
+        margin-bottom: 40px;
     }
 }
