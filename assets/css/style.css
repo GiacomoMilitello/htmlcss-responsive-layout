@@ -19,6 +19,9 @@ a{
 }
 
 /* SVG */
+.black-svg{
+    fill: black;
+}
 .white-svg{
     fill: white;
 }
@@ -153,9 +156,6 @@ nav ul li{
     justify-content: center;
     gap: 25px;
 }
-#get-demo .blue-button{
-    padding: 5px 40px;
-}
 .demo-card figure{
     width: 80%;
     margin: auto;
@@ -164,6 +164,11 @@ nav ul li{
 .demo-card img{
     width: 100%;
     display: block;
+}
+.demo-card .blue-button{
+    display: flex;
+    align-items: center;
+    max-width: 60%;
 }
 /*GET A DEMO TABLET VERSION */
 @media screen and (min-width: 768px) {
@@ -177,17 +182,15 @@ nav ul li{
         padding-bottom: 10%;
     }
     .demo-card{
-        flex: 1;
         margin: 0;
         flex-basis: calc((100% / 3) - 50px);
     }
-    /* sistemare gap prima riga */
     #get-demo > :first-child{
         flex-basis: calc(((100% / 3) * 2) - 25px);
     }
-    /* #get-demo .blue-button {
-        max-width: 600px;
-    } sistemare!! */
+    /* #get-demo > :first-child h3{
+        color: black;
+    } */
 }
 /* GET A DEMO DESKTOP VERSION */
 @media screen and (min-width: 1366px) {
@@ -227,6 +230,9 @@ nav ul li{
     align-items: center;
     gap: 20px;
 }
+.plan-card h3{
+    line-height: 120%;
+}
 .plan-card p{
     text-align: center;
 }
@@ -250,7 +256,7 @@ nav ul li{
     margin: 0 auto;
     background-color: #9792E4;
     border-radius: 50%;
-    padding: 8px 8px 2px 8px;
+    padding: 8px 12px 2px 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -458,6 +464,12 @@ nav ul li{
 }
 #about-us > div > *{
     margin-block: 20px;
+}
+#about-us .purple-button{
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    gap: 10px;
 }
 /*ABOUT-US TABLET VERSION */
 @media screen and (min-width: 768px) {
