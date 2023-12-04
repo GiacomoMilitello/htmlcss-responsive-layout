@@ -90,16 +90,12 @@ nav ul{
 }
 nav ul li{
     display: flex;
-    /* align-items: center; */
 }
 @media screen and (max-width: 1365px) {
     nav ul{
         display: none;
     }
 }
-/* sistemare hover */
-/* nav svg:hover ul{
-    display: flex; */
 
 /*NAV TABLET VERSION */
 @media screen and (min-width: 768px) {
@@ -169,6 +165,7 @@ nav ul li{
     display: flex;
     align-items: center;
     max-width: 60%;
+    margin: 0 auto;
 }
 /*GET A DEMO TABLET VERSION */
 @media screen and (min-width: 768px) {
@@ -188,9 +185,6 @@ nav ul li{
     #get-demo > :first-child{
         flex-basis: calc(((100% / 3) * 2) - 25px);
     }
-    /* #get-demo > :first-child h3{
-        color: black;
-    } */
 }
 /* GET A DEMO DESKTOP VERSION */
 @media screen and (min-width: 1366px) {
@@ -210,6 +204,10 @@ nav ul li{
     #get-demo > :first-child img{
         position: absolute;
         bottom: -364px;
+    }
+    .demo-card{
+        padding: 6%;
+        padding-bottom: 0px;
     }
 }
 
@@ -441,7 +439,6 @@ nav ul li{
 }
 #about-us h2{
     color: #9792E4;
-    /* margin: 10% 5%; */
     font-size: 200%;
 }
 #about-us figure{
@@ -532,12 +529,18 @@ nav ul li{
     color: #9792E4;
 }
 #get-started ul{
-    list-style: none;
+    /* list-style: none; */
     display: flex;
     font-size: 60%;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
+}
+#get-started ul > :first-child{
+    list-style: none;
+}
+#get-started ul > :last-child{
+    text-decoration: underline;
 }
 /* GET STARTED TABLET VERSION */
 @media screen and (min-width: 768px) {
