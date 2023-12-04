@@ -17,6 +17,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 /* SVG */
 .white-svg{
     fill: white;
@@ -182,7 +183,7 @@ nav ul li{
     }
     /* sistemare gap prima riga */
     #get-demo > :first-child{
-        flex-basis: calc((200% / 3) - 50px);
+        flex-basis: calc(((100% / 3) * 2) - 25px);
     }
     /* #get-demo .blue-button {
         max-width: 600px;
@@ -488,5 +489,96 @@ nav ul li{
     }
     #about-us > :nth-child(2) p{
         padding-right: 40%;
+    }
+}
+
+/* GET STARTED */
+#get-started{
+    background-color: #9792E4;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5%;
+    padding-block: 15%;
+    justify-content: center;
+    row-gap: 30px;
+}
+#get-started *{
+    text-align: center;
+    color: white;
+}
+#get-started h5{
+    color: #D4D3F1;
+}
+#get-started h3{
+    font-size: 150%;
+}
+#get-started h2{
+    color: #fcc869;
+    font-size: 300%;
+}
+#get-started .white-button{
+    color: #9792E4;
+}
+#get-started ul{
+    list-style: none;
+    display: flex;
+    font-size: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+/* GET STARTED TABLET VERSION */
+@media screen and (min-width: 768px) {
+    #get-started{
+        padding-inline: 15%;
+        padding-block: 5%;
+    }
+    #get-started ul{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+/* GET STARTED DESKTOP VERSION */
+@media screen and (min-width: 1366px) {
+    #get-started{
+        padding-inline: 30%;
+        padding-block: 2%;
+    }
+}
+
+/* BLACK FOOTER */
+#black-footer{
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5%;
+    padding-block: 15%;
+    justify-content: center;
+    row-gap: 30px;
+}
+#black-footer p{
+    text-align: center;
+    color: white;
+}
+.purple-link{
+    color: #9792E4;
+    text-decoration: underline;
+}
+/* BLACK FOOTER TABLET VERSION */
+@media screen and (min-width: 768px) {
+    #vlack-footer{
+        padding-inline: 15%;
+        padding-block: 5%;
+    }
+    /* #get-started ul{
+        width: 50%;
+        margin: 0 auto;
+    } */
+}
+/* BLACK FOOTER DESKTOP VERSION */
+@media screen and (min-width: 1366px) {
+    #black-footer{
+        padding-inline: 30%;
+        padding-block: 2%;
     }
 }
